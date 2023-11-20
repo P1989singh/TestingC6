@@ -37,7 +37,7 @@ jobs:
         run: |
           echo "DEV_DATA=$(cat ./DB/dev.txt)" >> $GITHUB_ENV
           echo "Dev information content $DEV_DATA"
-      - name: Read SIT file
+      - name: Read SIT file1
         run: |
           echo "devdata1=$(cat ./DB/sit.txt)" >> $GITHUB_ENV
           echo "SIT Information content: $devdata1"
@@ -72,7 +72,9 @@ jobs:
         run: |
             git fetch --unshallow
             git checkout main && git checkout -
-            git checkout feature && git checkout -
+            git checkout develop && git checkout -  
+            git checkout feature1 && git checkout -
+            git checkout hotfix && git checkout -  
     
       - name: Checkout to branch
         run: . ./.cicd/common/gitversion.sh checkout
