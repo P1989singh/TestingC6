@@ -5,7 +5,7 @@ branches:
     increment: Minor
   release:
     increment: None
-  feature:
+  feature1:
     regex: ^(feat|fix|improv|chore)[/-]
     commit-message-incrementing: Enabled
     tag: alpha
