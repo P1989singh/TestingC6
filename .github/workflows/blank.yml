@@ -53,7 +53,7 @@ jobs:
         run: |
           echo "devdata2=$(cat ./DB/sit.txt)" >> $GITHUB_ENV
           echo "SIT Information content: $devdata2"
-      - name: Cache Text File
+      - name: Cache Text File1
         uses: actions/cache@v2
         with:
           path: |
